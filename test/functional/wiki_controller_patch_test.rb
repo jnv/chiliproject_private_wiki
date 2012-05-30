@@ -4,9 +4,7 @@ require File.expand_path('../../test_helper', __FILE__)
 # Reuse the default test
 require File.expand_path('test/functional/wiki_controller_test', RAILS_ROOT)
 
-class WikiControllerTest < ActionController::TestCase
-
-  fixtures :projects, :users, :roles, :members, :member_roles, :enabled_modules, :wikis, :wiki_pages, :wiki_contents, :journals, :attachments, :enumerations
+class PrivateWiki::WikiControllerPatchTest < WikiControllerTest
 
   context "PrivateWikiPlugin" do
     setup do
