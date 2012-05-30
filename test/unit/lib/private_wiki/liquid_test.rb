@@ -1,11 +1,11 @@
 # -*- encoding : utf-8 -*-
 require File.expand_path('../../../../test_helper', __FILE__)
-require File.expand_path('test/unit/lib/chili_project/liquid_test', Rails.root)
 
 # Regressions testing
 # Unlike Redmine, ChiliProject luckily checks page visibility before inclusion
 # TODO test caching
-class PrivateWiki::LiquidTest < ChiliProject::LiquidTest
+class PrivateWiki::LiquidTest < ActionView::TestCase
+  include ApplicationHelper
 
   fixtures :all
 
