@@ -19,5 +19,5 @@ before_script: "./test/ci/before_script.sh"
 script: "./test/ci/script.sh"
 
 env:
-  - "DB=mysql2 BUNDLE_WITHOUT=rmagick:mysql:postgres:sqlite:ldap:openid"
-  - "DB=postgres BUNDLE_WITHOUT=rmagick:mysql:mysql2:sqlite:ldap:openid"
+  - "DB=mysql2 BUNDLE_WITHOUT=rmagick:mysql:postgres:sqlite"
+  - "DB=postgres BUNDLE_WITHOUT=rmagick:mysql:mysql2:sqlite"
